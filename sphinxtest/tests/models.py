@@ -9,7 +9,7 @@ class Group(models.Model):
 
 class Document(models.Model):
     group       = models.ForeignKey(Group)
-    date_added  = models.DateTimeField(default=datetime.datetime.now)
+    date_added  = models.DateTimeField(auto_now=True)
     title       = models.CharField(max_length=32)
     content     = models.TextField()
     

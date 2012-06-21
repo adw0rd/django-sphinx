@@ -73,8 +73,8 @@ else:
     }
 DEFAULT_SPHINX_PARAMS.update({
     'env_user': os.environ.get('USER'),
-    'log_path': getattr(settings, 'SPHINX_LOG_PATH', '/var/log/sphinxsearch/'),
-    'data_path': getattr(settings, 'SPHINX_DATA_PATH', '/var/data/'),
+    'log_path': getattr(settings, 'SPHINX_LOG_PATH', '/var/log/sphinxsearch'),
+    'data_path': getattr(settings, 'SPHINX_DATA_PATH', '/var/data'),
     'pid_file': getattr(settings, 'SPHINX_PID_FILE', '/var/run/searchd.pid'),
     'user_pid_file': getattr(settings, 'SPHINX_PID_FILE',
                              '/var/run/searchd_{0}.pid'.format(os.environ.get('USER'))),
