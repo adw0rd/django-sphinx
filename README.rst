@@ -52,6 +52,7 @@ The following is some example usage::
 	        },
 	        mode='SPH_MATCH_ALL',
 	        rankmode='SPH_RANK_NONE',
+	        limit=100
 	    )
 
 	queryset = MyModel.search.query('query')
